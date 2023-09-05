@@ -93,8 +93,21 @@
 <thead>
 <tr>
 <th style="font-weight: normal;text-align: center">GT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_was_gt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody>
+</table>
+
+<table align="center">
+<thead>
+<tr>
 <th style="font-weight: normal;text-align: center">FastSpeech 2 <br> (NFE:1, RTF: 0.0017)</th>
-	<th style="font-weight: normal;text-align: center">DiffGAN-TTS</th>
+<th style="font-weight: normal;text-align: center">DiffGAN-TTS</th>
+<th style="font-weight: normal;text-align: center">ProDiff <br> (NFE:4, RTF:0.0097)</th>
 </tr>
 </thead>
 <tbody>
@@ -105,13 +118,13 @@
 </tr>
 </tbody>
 </table>
-
+	
 <table align="center">
 <thead>
 <tr>
-<th style="font-weight: normal;text-align: center">ProDiff <br> (NFE:4, RTF:0.0097)</th>
 <th style="font-weight: normal;text-align: center">DiffSpeech <br> (NFE:4, RTF:0.0084)</th>
 <th style=" font-weight: normal;text-align: center">  Diff-TTS <br> (NFE:50, RTF:0.1694)</th>
+<th style="font-weight: normal;text-align: center">Grad-TTS <br>  (NFE:71, RTF:0.1030)</th>
 </tr>
 </thead>
 <tbody>
@@ -126,9 +139,9 @@
 <table align="center">
 <thead>
 <tr>
-<th style="font-weight: normal;text-align: center">Grad-TTS <br>  (NFE:71, RTF:0.1030)</th>
-<th style=" text-align: center">CoMoSpeech (Teacher) <br> (NFE:50, RTF:0.1824)</th>
-<th style="text-align: center">CoMoSpeech <br> (NFE:1, RTF:0.0058)</th>
+<th style=" text-align: center">CoMoSpeech (Teacher, 50 step) <br> (NFE:50, RTF:0.1824)</th>
+<th style="text-align: center">CoMoSpeech (Teacher, 1 step) <br> (NFE:1, RTF:0.0058)</th>
+<th style="font-weight: normal;text-align: center">CoMoSpeech (1 step) <br> (NFE:4, RTF:0.0097)</th>
 </tr>
 </thead>
 <tbody>
@@ -140,113 +153,192 @@
 </tbody>
 </table>
 
-<br></br>
-<p><em><font color="061E61">Sample 2: And it is worth mention in passing that, as an example of fine typography, </font></em></p>
 <table align="center">
-  <thead>
-  <tr>
-  <th style="font-weight: normal;text-align: center">Recordings</th>
-  <th style="font-weight: normal;text-align: center">GT mel + Vocoder</th>
-  <th style="font-weight: normal;text-align: center">FastSpeech 2 <br> (NFE:1, RTF: 0.0017)</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/1_was_gt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/1_wavs_gt_mel.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/1_wavs_fft.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  </tr>
-  </tbody>
-  </table>
-  
-  <table align="center">
-  <thead>
-  <tr>
-  <th style="font-weight: normal;text-align: center">ProDiff <br> (NFE:4, RTF:0.0097)</th>
-  <th style="font-weight: normal;text-align: center">DiffGAN-TTS <br> (NFE:4, RTF:0.0084)</th>
-  <th style=" font-weight: normal;text-align: center">  Grad-TTS <br> (NFE:50, RTF:0.1694)</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/1_wavs_prodiff.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/1_wav_diffgantts.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/1_wav_gradtts50.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  </tr>
-  </tbody>
-  </table>
-  
-  <table align="center">
-  <thead>
-  <tr>
-  <th style="font-weight: normal;text-align: center">DiffSpeech <br>  (NFE:71, RTF:0.1030)</th>
-  <th style=" text-align: center">Teacher <br> (NFE:50, RTF:0.1824)</th>
-  <th style="text-align: center">CoMoSpeech <br> (NFE:1, RTF:0.0058)</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/1_wavs_diff.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/1_wavs_teacher.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/1_wavs_lj_1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  </tr>
-  </tbody>
-  </table>
+<thead>
+<tr>
+<th style="font-weight: normal;text-align: center">ReFlow-TTS (1step) <br> (NFE:4, RTF:0.0084)</th>
+<th style=" font-weight: normal;text-align: center">  ReFlow-TTS (50step) <br> (NFE:50, RTF:0.1694)</th>
+<th style=" font-weight: normal;text-align: center">  ReFlow-TTS (RK45 solver) <br> (NFE:50, RTF:0.1694)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wavs_prodiff.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wav_diffgantts.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wav_gradtts50.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody>
+</table>
 
 
 
 <br></br>
-<p><em><font color="061E61">Sample 3: than in the same operations with ugly ones.</font></em></p>
+<p><em><font color="061E62">Sample 2: Now, as all books not primarily intended as picture-books consist principally of types composed to form letterpress,</font></em></p>
 <table align="center">
-  <thead>
-  <tr>
-  <th style="font-weight: normal;text-align: center">Recordings</th>
-  <th style="font-weight: normal;text-align: center">GT mel + Vocoder</th>
-  <th style="font-weight: normal;text-align: center">FastSpeech 2 <br> (NFE:1, RTF: 0.0017)</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/2_was_gt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/2_wavs_gt_mel.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/2_wavs_fft.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  </tr>
-  </tbody>
-  </table>
-  
-  <table align="center">
-  <thead>
-  <tr>
-  <th style="font-weight: normal;text-align: center">ProDiff <br> (NFE:4, RTF:0.0097)</th>
-  <th style="font-weight: normal;text-align: center">DiffGAN-TTS <br> (NFE:4, RTF:0.0084)</th>
-  <th style=" font-weight: normal;text-align: center">  Grad-TTS <br> (NFE:50, RTF:0.1694)</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/2_wavs_prodiff.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/2_wav_diffgantts.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/2_wav_gradtts50.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  </tr>
-  </tbody>
-  </table>
-  
-  <table align="center">
-  <thead>
-  <tr>
-  <th style="font-weight: normal;text-align: center">DiffSpeech <br>  (NFE:71, RTF:0.1030)</th>
-  <th style=" text-align: center">Teacher <br> (NFE:50, RTF:0.1824)</th>
-  <th style="text-align: center">CoMoSpeech <br> (NFE:1, RTF:0.0058)</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/2_wavs_diff.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/2_wavs_teacher.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/2_wavs_lj_1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  </tr>
-  </tbody>
-  </table>
+<thead>
+<tr>
+<th style="font-weight: normal;text-align: center">GT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_was_gt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody>
+</table>
+
+<table align="center">
+<thead>
+<tr>
+<th style="font-weight: normal;text-align: center">FastSpeech 2 <br> (NFE:1, RTF: 0.0017)</th>
+<th style="font-weight: normal;text-align: center">DiffGAN-TTS</th>
+<th style="font-weight: normal;text-align: center">ProDiff <br> (NFE:4, RTF:0.0097)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_was_gt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wavs_gt_mel.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wavs_fft.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody>
+</table>
+	
+<table align="center">
+<thead>
+<tr>
+<th style="font-weight: normal;text-align: center">DiffSpeech <br> (NFE:4, RTF:0.0084)</th>
+<th style=" font-weight: normal;text-align: center">  Diff-TTS <br> (NFE:50, RTF:0.1694)</th>
+<th style="font-weight: normal;text-align: center">Grad-TTS <br>  (NFE:71, RTF:0.1030)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wavs_prodiff.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wav_diffgantts.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wav_gradtts50.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody>
+</table>
+
+<table align="center">
+<thead>
+<tr>
+<th style=" text-align: center">CoMoSpeech (Teacher, 50 step) <br> (NFE:50, RTF:0.1824)</th>
+<th style="text-align: center">CoMoSpeech (Teacher, 1 step) <br> (NFE:1, RTF:0.0058)</th>
+<th style="font-weight: normal;text-align: center">CoMoSpeech (1 step) <br> (NFE:4, RTF:0.0097)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wavs_diff.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wavs_teacher.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wavs_lj_1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody>
+</table>
+
+<table align="center">
+<thead>
+<tr>
+<th style="font-weight: normal;text-align: center">ReFlow-TTS (1step) <br> (NFE:4, RTF:0.0084)</th>
+<th style=" font-weight: normal;text-align: center">  ReFlow-TTS (50step) <br> (NFE:50, RTF:0.1694)</th>
+<th style=" font-weight: normal;text-align: center">  ReFlow-TTS (RK45 solver) <br> (NFE:50, RTF:0.1694)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wavs_prodiff.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wav_diffgantts.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wav_gradtts50.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody>
+</table>
+
+
+<br></br>
+<p><em><font color="061E62">Sample 3: Now, as all books not primarily intended as picture-books consist principally of types composed to form letterpress,</font></em></p>
+<table align="center">
+<thead>
+<tr>
+<th style="font-weight: normal;text-align: center">GT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_was_gt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody>
+</table>
+
+<table align="center">
+<thead>
+<tr>
+<th style="font-weight: normal;text-align: center">FastSpeech 2 <br> (NFE:1, RTF: 0.0017)</th>
+<th style="font-weight: normal;text-align: center">DiffGAN-TTS</th>
+<th style="font-weight: normal;text-align: center">ProDiff <br> (NFE:4, RTF:0.0097)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_was_gt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wavs_gt_mel.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wavs_fft.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody>
+</table>
+	
+<table align="center">
+<thead>
+<tr>
+<th style="font-weight: normal;text-align: center">DiffSpeech <br> (NFE:4, RTF:0.0084)</th>
+<th style=" font-weight: normal;text-align: center">  Diff-TTS <br> (NFE:50, RTF:0.1694)</th>
+<th style="font-weight: normal;text-align: center">Grad-TTS <br>  (NFE:71, RTF:0.1030)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wavs_prodiff.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wav_diffgantts.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wav_gradtts50.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody>
+</table>
+
+<table align="center">
+<thead>
+<tr>
+<th style=" text-align: center">CoMoSpeech (Teacher, 50 step) <br> (NFE:50, RTF:0.1824)</th>
+<th style="text-align: center">CoMoSpeech (Teacher, 1 step) <br> (NFE:1, RTF:0.0058)</th>
+<th style="font-weight: normal;text-align: center">CoMoSpeech (1 step) <br> (NFE:4, RTF:0.0097)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wavs_diff.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wavs_teacher.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wavs_lj_1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody>
+</table>
+
+<table align="center">
+<thead>
+<tr>
+<th style="font-weight: normal;text-align: center">ReFlow-TTS (1step) <br> (NFE:4, RTF:0.0084)</th>
+<th style=" font-weight: normal;text-align: center">  ReFlow-TTS (50step) <br> (NFE:50, RTF:0.1694)</th>
+<th style=" font-weight: normal;text-align: center">  ReFlow-TTS (RK45 solver) <br> (NFE:50, RTF:0.1694)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wavs_prodiff.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wav_diffgantts.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style=" text-align: center"><audio controls="controls" ><source src="GeneratedSamples/LJSpeech/0_wav_gradtts50.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody>
+</table>
+
 
 </div>
 
@@ -255,7 +347,7 @@
 
  
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"> 
-<h2 id="TTS" style="text-align:center;"><font color="6843a4">Text-to-speech results</font></h2>
+<h2 id="TTS" style="text-align:center;"><font color="6843a4">Text-to-speech results for ReFlow-TTS and 2-ReFlow-TTS</font></h2>
 <p style="text-align: justify;"><font color="061E61"> The below audio samples show the comparison between ReFlow-TTS (1step), ReFlow-TTS (50step), ReFlow-TTS (RK45 solver), 2-ReFlow-TTS (1step), 2-ReFlow-TTS (50step), 2-ReFlow-TTS (RK45 solver).
 <ul style="list-style-type:square">
 
