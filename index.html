@@ -69,7 +69,7 @@
 </div>
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"> 
 <h2 id="TTS" style="text-align:center;"><font color="6843a4">Text-to-speech results</font></h2>
-<p style="text-align: justify;"><font color="061E61"> The below audio samples show the comparison between Recordings,  FastSpeech 2, DiffGAN-TTS, ProDiff, DiffSpeech, GradTTS, CoMoSpeech (Teacher) and <b> our ReFlow-TTS (1step, 50step, RK45 solver) </b> . Samples are selected from the test dataset of LJSpeech. 
+<p style="text-align: justify;"><font color="061E61"> The below audio samples show the comparison between Recordings,  FastSpeech 2, DiffGAN-TTS, ProDiff, DiffSpeech, GradTTS, CoMoSpeech (Teacher, 50 step), CoMoSpeech (Teacher, 1 step), CoMoSpeech (1 step) and <b> our ReFlow-TTS (1step, 50step, RK45 solver) </b> . Samples are selected from the test dataset of LJSpeech. 
 <ul style="list-style-type:square">
 <!--
 <li><font color="061E61"> For each dataset, the same HiFi-GAN vocoder pretrained on GT mel is used for all methods. </font></li>
@@ -92,9 +92,9 @@
 <table align="center">
 <thead>
 <tr>
-<th style="font-weight: normal;text-align: center">Recordings</th>
-<th style="font-weight: normal;text-align: center">GT mel + Vocoder</th>
+<th style="font-weight: normal;text-align: center">GT</th>
 <th style="font-weight: normal;text-align: center">FastSpeech 2 <br> (NFE:1, RTF: 0.0017)</th>
+	<th style="font-weight: normal;text-align: center">DiffGAN-TTS</th>
 </tr>
 </thead>
 <tbody>
@@ -110,8 +110,8 @@
 <thead>
 <tr>
 <th style="font-weight: normal;text-align: center">ProDiff <br> (NFE:4, RTF:0.0097)</th>
-<th style="font-weight: normal;text-align: center">DiffGAN-TTS <br> (NFE:4, RTF:0.0084)</th>
-<th style=" font-weight: normal;text-align: center">  Grad-TTS <br> (NFE:50, RTF:0.1694)</th>
+<th style="font-weight: normal;text-align: center">DiffSpeech <br> (NFE:4, RTF:0.0084)</th>
+<th style=" font-weight: normal;text-align: center">  Diff-TTS <br> (NFE:50, RTF:0.1694)</th>
 </tr>
 </thead>
 <tbody>
@@ -126,8 +126,8 @@
 <table align="center">
 <thead>
 <tr>
-<th style="font-weight: normal;text-align: center">DiffSpeech <br>  (NFE:71, RTF:0.1030)</th>
-<th style=" text-align: center">Teacher <br> (NFE:50, RTF:0.1824)</th>
+<th style="font-weight: normal;text-align: center">Grad-TTS <br>  (NFE:71, RTF:0.1030)</th>
+<th style=" text-align: center">CoMoSpeech (Teacher) <br> (NFE:50, RTF:0.1824)</th>
 <th style="text-align: center">CoMoSpeech <br> (NFE:1, RTF:0.0058)</th>
 </tr>
 </thead>
@@ -254,11 +254,10 @@
  
 
  
-
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"> 
-<h2 id="SVS" style="text-align:center;" ><font color="6843a4">The below audio samples show the comparison between ReFlow-TTS (1step), ReFlow-TTS (50step), ReFlow-TTS (RK45 solver), 2-ReFlow-TTS (1step), 2-ReFlow-TTS (50step), 2-ReFlow-TTS (RK45 solver), </font></h2> 
-<p style="text-align: justify;"><font color="061E61">
-
+<h2 id="TTS" style="text-align:center;"><font color="6843a4">Text-to-speech results</font></h2>
+<p style="text-align: justify;"><font color="061E61"> The below audio samples show the comparison between ReFlow-TTS (1step), ReFlow-TTS (50step), ReFlow-TTS (RK45 solver), 2-ReFlow-TTS (1step), 2-ReFlow-TTS (50step), 2-ReFlow-TTS (RK45 solver).
+<ul style="list-style-type:square">
 
 <!-- <ul style="list-style-type:square"> --> 
 <br></br>
