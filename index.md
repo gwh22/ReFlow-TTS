@@ -2,7 +2,7 @@
 ## Abstract
 
 
-`MM-TTS: Expressive Text-to-Speech Synthesis with Multi-modal Prompts`
+`REFLOW-TTS: A RECTIFIED FLOW MODEL FOR HIGH-FIDELITY TEXT-TO-SPEECH`
 ---
 
 ## Speech based Style Transfer
