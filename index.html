@@ -24,7 +24,7 @@
 	<link rel="stylesheet" href="css/custom.css">
 	<link rel="stylesheet" href="css/normalize.css">
 
-	<title>CoMoSpeech: One-Step Speech and Singing Voice Synthesis via Consistency Model - Speech Research</title>
+	<title>ReFlow-TTS: A Rectified Flow model for High-fidelity Text-to-Speech</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 
 </head>
@@ -46,7 +46,7 @@
 	<main role="main">
 		<article itemscope itemtype="https://schema.org/BlogPosting">
 
-            <h1 class="entry-title" itemprop="headline" align="center" ><font color="000093"  ><b>CoMoSpeech: One-Step Speech and Singing Voice Synthesis via Consistency Model</b></font></h1>
+            <h1 class="entry-title" itemprop="headline" align="center" ><font color="000093"  ><b>ReFlow-TTS: A Rectified Flow model for High-fidelity Text-to-Speech</b></font></h1>
 			
 			<section itemprop="entry-text">
 				<br>
@@ -60,25 +60,16 @@
     }
   </style>
   
-  <div class="centered-link">
-    <a href="https://github.com/zhenye234/CoMoSpeech">CODE LINK</a>
-  </div>
-  <p style="text-align: justify;"><font color="061E61">  Denoising diffusion probabilistic models (DDPMs) have shown promising performance for speech synthesis. However, a large number of iterative steps are required to achieve high sample quality, which restricts the inference speed. Maintaining sample quality while increasing sampling speed has become a challenging task. In this paper, we propose a <b>Co</b>nsistency <b>Mo</b>del-based <b>Speech</b> synthesis method, CoMoSpeech, which   achieve speech synthesis through a single diffusion sampling step while achieving high audio quality. The consistency constraint is applied to distill a consistency model from a well-designed diffusion-based teacher model, which ultimately yields superior performance in the distilled CoMoSpeech. Our experiments show that by generating audio recordings by a single sampling step, the CoMoSpeech achieves an inference speed more than 150 times faster than real-time on a single NVIDIA A100 GPU, which is comparable to FastSpeech2, making diffusion-sampling based speech synthesis truly practical. Meanwhile, objective and subjective evaluations on text-to-speech and singing voice synthesis show that the proposed teacher models yield the best audio quality, and the one-step sampling based CoMoSpeech achieves the best inference speed with better or comparable audio quality to other conventional multi-step diffusion model baselines.</font></p>
+<!--   <div class="centered-link">
+    <a href="https://github.com/">CODE LINK</a>
+  </div> -->
+  <p style="text-align: justify;"><font color="061E61"> The Denoising Diffusion Probabilistic Models (DDPM) and score-based generative models have demonstrated excellent performance in speech synthesis tasks. However, its effectiveness comes at the cost of numerous sampling steps, resulting in prolonged sampling time required to synthesize high-quality speech. This drawback hinders its practical applicability in real-world scenarios. In this paper, we introduce ReFlow-TTS, a novel rectified flow based method for speech synthesis for high-fidelity. Furthermore, our proposed approach enables high-quality speech synthesis with a single sampling step and eliminates the need for training a teacher model. Our experiments on LJSpeech Dataset show that our ReFlow-TTS method achieves the best performance compared with other diffusion based models. And the ReFlow-TTS with one step sampling achieves competitive performance through an inference speed more than 170 times faster than real-time on a single NVIDIA 2080TI GPU.</font></p>
   <!-- <br></br> -->
-  <figure>
-  <p align="center"><img src="GeneratedSamples/1_12_1.png" width="100%"  class="center"/></p>
- 
-
-  <figcaption>
-  <!-- <b>Figure 1:</b> The audio quality and inference speed comparisons of different TTS systems. We use  MOS (mean opinion score) and NFE (number of  function evaluations) to measure the audio quality and inference speed, respectively. The higher MOS and lower NFE indicate better audio quality and faster inference speed. The proposed CoMoSpeech achieves the best trade-off between audio quality and inference speed. In addition, our teacher models achieve the best audio quality among all the compared methods. -->
-  <b>Figure 1:</b>  An illustration of  CoMoSpeech. Our CoMoSpeech distills the multi-step sampling of the teacher model into one step utilizing the consistency constraint.
-  </figcaption>
-  </figure>
   <!-- <br></br> -->
 </div>
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"> 
-<h2 id="TTS" style="text-align:center;"><font color="000093">Text-to-speech</font></h2>
-<p style="text-align: justify;"><font color="061E61"> The below audio samples show the comparison between Recordings, ground-truth (GT) mel + Vocoder, FastSpeech 2, DiffGAN-TTS, DiffSpeech, ProDiff, GradTTS,<b> our Teacher   and CoMoSpeech</b> . Samples are selected from the test dataset of  LJSpeech . 
+<h2 id="TTS" style="text-align:center;"><font color="000093">Text-to-speech results</font></h2>
+<p style="text-align: justify;"><font color="061E61"> The below audio samples show the comparison between Recordings,  FastSpeech 2, DiffGAN-TTS, ProDiff, DiffSpeech, GradTTS, CoMoSpeech (Teacher) and <b> our ReFlow-TTS (1step, 50step, RK45 solver) </b> . Samples are selected from the test dataset of LJSpeech. 
 <ul style="list-style-type:square">
 <!--
 <li><font color="061E61"> For each dataset, the same HiFi-GAN vocoder pretrained on GT mel is used for all methods. </font></li>
