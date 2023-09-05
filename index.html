@@ -252,249 +252,12 @@
 
  
  
-<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"> 
-<!-- </ul> -->
-<h2 id="SVS" style="text-align:center;"><font color="6843a4">Singing voice synthesis</font></h2> 
-<p style="text-align: justify;"><font color="061E61"> The below audio samples show the comparison between Recordings, ground-truth (GT) mel + Vocoder, FFTSinger, HiFiSinger, DiffSinger, <b>Our Teacher-SVS  and CoMoSpeech-SVS</b>. Samples are selected from the test dataset of OpenCpop. 
-<!-- <ul style="list-style-type:square"> -->
-<br></br>
- 
- 
 
-<p><em><font color="061E61">Sample 1: 我晒干了沉默悔得很冲动 </font></em></p>
-
-<table align="center">
-<thead>
-<tr>
-<th style="font-weight: normal;text-align: center">Recordings</th>
-<th style="font-weight: normal;text-align: center">GT mel + Vocoder</th>
-<th style="font-weight: normal;text-align: center">FFTSinger <br> (NFE:1, RTF:0.0032)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/2_wav_gt2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/2_wavs_gt_mel.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/2_wavs_fft.wav" autoplay/>Your browser does not support the audio element.</audio></td>
- 
-</tr>
-</tbody>
-</table>
-
-<table align="center">
-<thead>
-<tr>
-  <th style="font-weight: normal;text-align: center">HiFiSinger <br> (NFE:1, RTF:0.0034)</th>
-  <th style="font-weight: normal;text-align: center">DiffSinger  <br> (NFE:60, RTF:0.1338)</th>
-<!-- <th style="text-align: center">DiffSinger B <br> (NFE:100, RTF:0.2198)</th>/ -->
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/2_wavs_gan.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/2_wavs_60.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<!-- <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/2_wavs_100.wav" autoplay/>Your browser does not support the audio element.</audio></td> -->
- 
-</tr>
-</tbody>
-</table>
-
-<table align="center">
-<thead>
-<tr>
-  <th style="text-align: center">Teacher-SVS <br> (NFE:50, RTF:0.1282)</th>
-  <th style="text-align: center">CoMoSpeech-SVS <br> (NFE:1, RTF:0.0048)</th>
-  <!-- <th style="text-align: center">DiffGAN-TTS <br> (NFE:4, RTF:0.0084)</th> -->
-
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/2_wavs_18steps.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-
-<td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/2_wavs_1step.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-
-</tr>
-</tbody>
-</table>
-
-<br></br>
-<p><em><font color="061E61">Sample 2: 能不能给我一首歌的时间</font></em></p>
-<table align="center">
-  <thead>
-  <tr>
-  <th style="font-weight: normal;text-align: center">Recordings</th>
-  <th style="font-weight: normal;text-align: center">GT mel + Vocoder</th>
-  <th style="font-weight: normal;text-align: center">FFTSinger <br> (NFE:1, RTF:0.0032)</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/1_wav_gt2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/1_wavs_gt_mel.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/1_wavs_fft.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-   
-  </tr>
-  </tbody>
-  </table>
-  
-  <table align="center">
-  <thead>
-  <tr>
-    <th style="font-weight: normal;text-align: center">HiFiSinger <br> (NFE:1, RTF:0.0034)</th>
-    <th style="font-weight: normal;text-align: center">DiffSinger  <br> (NFE:60, RTF:0.1338)</th>
-  <!-- <th style="text-align: center">DiffSinger B <br> (NFE:100, RTF:0.2198)</th>/ -->
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/1_wavs_gan.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/1_wavs_60.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <!-- <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/2_wavs_100.wav" autoplay/>Your browser does not support the audio element.</audio></td> -->
-   
-  </tr>
-  </tbody>
-  </table>
-  
-  <table align="center">
-  <thead>
-  <tr>
-    <th style="text-align: center">Teacher-SVS <br> (NFE:50, RTF:0.1282)</th>
-    <th style="text-align: center">CoMoSpeech-SVS <br> (NFE:1, RTF:0.0048)</th>
-    <!-- <th style="text-align: center">DiffGAN-TTS <br> (NFE:4, RTF:0.0084)</th> -->
-  
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/1_wavs_18steps.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/1_wavs_1step.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  
-  </tr>
-  </tbody>
-  </table>
-
-<br></br>
-<p><em><font color="061E61">Sample 3: 小酒窝长睫毛是你最美的记号 </font></em></p>
-<table align="center">
-  <thead>
-  <tr>
-  <th style="font-weight: normal;text-align: center">Recordings</th>
-  <th style="font-weight: normal;text-align: center">GT mel + Vocoder</th>
-  <th style="font-weight: normal;text-align: center">FFTSinger <br> (NFE:1, RTF:0.0032)</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/0_wav_gt2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/0_wavs_gt_mel.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/0_wavs_fft.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-   
-  </tr>
-  </tbody>
-  </table>
-  
-  <table align="center">
-  <thead>
-  <tr>
-    <th style="font-weight: normal;text-align: center">HiFiSinger <br> (NFE:1, RTF:0.0034)</th>
-    <th style="font-weight: normal;text-align: center">DiffSinger  <br> (NFE:60, RTF:0.1338)</th>
-  <!-- <th style="text-align: center">DiffSinger B <br> (NFE:100, RTF:0.2198)</th>/ -->
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/0_wavs_gan.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/0_wavs_60.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <!-- <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/2_wavs_100.wav" autoplay/>Your browser does not support the audio element.</audio></td> -->
-   
-  </tr>
-  </tbody>
-  </table>
-  
-  <table align="center">
-  <thead>
-  <tr>
-    <th style="text-align: center">Teacher-SVS <br> (NFE:50, RTF:0.1282)</th>
-    <th style="text-align: center">CoMoSpeech-SVS <br> (NFE:1, RTF:0.0048)</th>
-    <!-- <th style="text-align: center">DiffGAN-TTS <br> (NFE:4, RTF:0.0084)</th> -->
-  
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/0_wavs_18steps.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/0_wavs_1step.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  
-  </tr>
-  </tbody>
-  </table>
-
-  <br></br>
-<p><em><font color="061E61">Sample 4: 哦越过你划的线我定了勇气的终点 </font></em></p>
-<table align="center">
-  <thead>
-  <tr>
-  <th style="font-weight: normal;text-align: center">Recordings</th>
-  <th style="font-weight: normal;text-align: center">GT mel + Vocoder</th>
-  <th style="font-weight: normal;text-align: center">FFTSinger <br> (NFE:1, RTF:0.0032)</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/3_wav_gt2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/3_wavs_gt_mel.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/3_wavs_fft.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-   
-  </tr>
-  </tbody>
-  </table>
-  
-  <table align="center">
-  <thead>
-  <tr>
-    <th style="font-weight: normal;text-align: center">HiFiSinger <br> (NFE:1, RTF:0.0034)</th>
-    <th style="font-weight: normal;text-align: center">DiffSinger  <br> (NFE:60, RTF:0.1338)</th>
-  <!-- <th style="text-align: center">DiffSinger B <br> (NFE:100, RTF:0.2198)</th>/ -->
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/3_wavs_gan.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/3_wavs_60.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <!-- <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/2_wavs_100.wav" autoplay/>Your browser does not support the audio element.</audio></td> -->
-   
-  </tr>
-  </tbody>
-  </table>
-  
-  <table align="center">
-  <thead>
-  <tr>
-    <th style="text-align: center">Teacher-SVS <br> (NFE:50, RTF:0.1282)</th>
-    <th style="text-align: center">CoMoSpeech-SVS <br> (NFE:1, RTF:0.0048)</th>
-    <!-- <th style="text-align: center">DiffGAN-TTS <br> (NFE:4, RTF:0.0084)</th> -->
-  
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/3_wavs_18steps.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/cpop_demo/3_wavs_1step.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  
-  </tr>
-  </tbody>
-  </table>
- 
-</div>
  
 
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"> 
-<h2 id="SVS" style="text-align:center;" ><font color="6843a4">Ablation Studies of Consistency Distillation at Different Sampling Steps</font></h2> 
-<p style="text-align: justify;"><font color="061E61"> The below audio samples show the comparison between   Our teacher model  (before consistency distillation) and CoMoSpeech (after consistency distillation) at different sampling steps.  
+<h2 id="SVS" style="text-align:center;" ><font color="6843a4">The below audio samples show the comparison between ReFlow-TTS (1step), ReFlow-TTS (50step), ReFlow-TTS (RK45 solver), 2-ReFlow-TTS (1step), 2-ReFlow-TTS (50step), 2-ReFlow-TTS (RK45 solver), </font></h2> 
+<p style="text-align: justify;"><font color="061E61">
 
 
 <!-- <ul style="list-style-type:square"> --> 
@@ -504,10 +267,9 @@
 <table align="center">
 <thead>
 <tr>
-<th style="text-align: center">CoMoSpeech <br> (1 step)</th>
-<!-- <th style="text-align: center">DiffGAN-TTS <br> (NFE:4, RTF:0.0084)</th> -->
-<th style="text-align: center">Teacher <br> (1 step)</th>
-
+<th style="text-align: center">ReFlow-TTS (1step)</th>
+<th style="text-align: center"> ReFlow-TTS (50step)</th>
+<th style="text-align: center"> ReFlow-TTS (RK45 solver)</th>
 
 
 </tr>
@@ -516,25 +278,28 @@
 <tr>
 <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/ab/11.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/ab/15.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/ab/15.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 
 </tr>
 </tbody>
 </table>
-<p align="center"><img src="GeneratedSamples/6.png" width="80%"  class="center"/></p>
-<p style="text-align: justify;"><font color="061E61">    We can observe that the one-step synthesized mel-spectrogram after consistency distillation significantly improve the quality by enriching many details, resulting in natural and expressive sounds.   </font></em></p>
-<p><font color="061E61">    We also show the multi-step results.   </font></em></p>
+
+
 <table align="center">
 <thead>
 <tr>
-<th style="text-align: center">CoMoSpeech <br> (2 steps)</th>
-<!-- <th style="text-align: center">DiffGAN-TTS <br> (NFE:4, RTF:0.0084)</th> -->
-<th style="text-align: center">Teacher <br> (2 steps)</th>
+<th style="text-align: center">2-ReFlow-TTS (1step)</th>
+<th style="text-align: center"> 2-ReFlow-TTS (50step)</th>
+<th style="text-align: center"> 2-ReFlow-TTS (RK45 solver)</th>
+
+
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/ab/21.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/ab/25.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/ab/11.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/ab/15.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/ab/15.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 
 </tr>
 </tbody>
@@ -542,62 +307,6 @@
 
 
 
-
-<table align="center">
-  <thead>
-  <tr>
-  <th style="text-align: center">CoMoSpeech <br> (4 steps)</th>
-  <!-- <th style="text-align: center">DiffGAN-TTS <br> (NFE:4, RTF:0.0084)</th> -->
-  <th style="text-align: center">Teacher <br> (4 steps)</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/ab/41.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/ab/45.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  
-  </tr>
-  </tbody>
-  </table>
-
-
-<table align="center">
-  <thead>
-  <tr>
-  <th style="text-align: center">CoMoSpeech <br> (10 steps)</th>
-  <!-- <th style="text-align: center">DiffGAN-TTS <br> (NFE:4, RTF:0.0084)</th> -->
-  <th style="text-align: center">Teacher <br> (10 steps)</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/ab/101.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/ab/105.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  
-  </tr>
-  </tbody>
-  </table>
-
-
-
-
-
-<table align="center">
-  <thead>
-  <tr>
-  <th style="text-align: center">CoMoSpeech <br> (50 steps)</th>
-  <!-- <th style="text-align: center">DiffGAN-TTS <br> (NFE:4, RTF:0.0084)</th> -->
-  <th style="text-align: center">Teacher <br> (50 steps)</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/ab/501.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  <td style="text-align: center"><audio controls="controls" ><source src="GeneratedSamples/ab/505.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-  
-  </tr>
-  </tbody>
-  </table>
 
  
 
